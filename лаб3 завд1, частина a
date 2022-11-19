@@ -25,9 +25,9 @@ int main()
 		k = pow(s, 2) + 2 * t;
 		printf("if s=%d, then:\n k = (pow(%d, 2) + 2 * %d) = %.0lf\n", s, s, t, k);
 	}
-	if ((s != -7) && (s != 7) && (s != 14) && (s == 0) && (s / t) + (2 * s * t) >= 0) {
+	if ((s != -7) && (s != 7) && (s != 14) && (s == 0) && (s / t) + (2 * s * t) >= 0);
 		printf("impossible to count");
-	}
+	
 	int getch(); getch();
 	return 0;
 }
