@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include<locale.h>
+#include <math.h>
+#include <conio.h>
+
+int main()
+{
+	int s, t;
+	double k, result;
+	setlocale(LC_CTYPE, "ukr");
+	printf("insert s:");
+	scanf_s("%d", &s);
+	printf("insert t:");
+	scanf_s("%d", &t);
+
+	if ((s == -7) && (s != 0)) {
+		k = (s / t) + 2 * s * t;
+		printf("if s=%d, then:\n k = (%d / %d) + 2 * %d * %d = %.0lf\n", s, s, t, s, t, k);
+	}
+	if ((s == 7) && (s / t) + (2 * s * t) > 0) {
+		k = sqrt((s / t) + (2 * s * t));
+		printf("if s=%d, then:\n k = sqrt(%d / %d) + (2 * %d * %d ) = %.0lf\n", s, s, t, s, t, k);
+	}
+	if (s == 14) {
+		k = pow(s, 2) + 2 * t;
+		printf("if s=%d, then:\n k = (pow(%d, 2) + 2 * %d) = %.0lf\n", s, s, t, k);
+	}
+	if ((s != -7) && (s != 7) && (s != 14) && (s == 0) && (s / t) + (2 * s * t) >= 0) {
+		printf("impossible to count");
+	}
+	int getch(); getch();
+	return 0;
+}
